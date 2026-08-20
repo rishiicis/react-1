@@ -1,0 +1,78 @@
+@import "tailwindcss";
+.navBar {
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap: 20px;
+  padding: 5px;
+}
+.navBar li a{ 
+  color: #333;
+}
+.navBar li a.active, .navBar li a:hover{
+  color: #ff0000;
+}
+.navBar li a.link{
+  color: #007bff;
+}
+.navBar li a.link:hover {
+  color: #0f894c;
+}
+
+
+body.light {
+  background-color: #fff;
+  color: black;
+}
+
+body.dark {
+  background-color: #222;
+  color: white;
+}
+.themeButton{
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  border: 1px solid red;
+  background: #99a1af;
+  padding:1px 10px 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  line-height: 1.2;
+}
+.modalBackdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+.modal {
+  background: white;
+  padding: 30px 20px;
+  max-width: 600px;
+  position: relative;
+  border-radius: 8px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close-btn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+  background: #ff0000;
+  width: 40px;
+  border-radius: 0 8px;
+}
+.close-btn:hover{
+  background: #99a1af;
+}
+
+.todoWrap{display: flex; flex-wrap: wrap; gap: 20px;}
+.completed{color:green}
+.userBlock{border: 1px solid; flex:0 0 calc(25% - 15px); height: 250px; overflow-y: auto;}
