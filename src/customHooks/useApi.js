@@ -36,3 +36,33 @@ const useApi = (url)=>{
 }
 
 export default useApi;
+
+ 
+//Use case
+// import useFetch from "./useFetch";
+function DisplayUser() {
+  const {
+    data: users,
+    loading,
+    error,
+  } = useApi("https://jsonplaceholder.typicode.com/users");
+ 
+  if (loading) {
+    return <h2>Loading...</h2>;
+  }
+ 
+  if (error) {
+    return <h2>{error}</h2>;
+  }
+ 
+  return (
+    <div>
+      <h2>User List</h2>
+      {users.map((user) => (
+        <div key={user.id}>
+          <p>{user.name}</p>
+        </div>
+      ))}
+    </div>
+  );
+}
