@@ -1,12 +1,15 @@
 import GropuTodo from "../learning/group-Todo";
+import ProductCart from "../learning/productCart";
+import ProductListV from "../learning/productList-react-virtualized";
+// import ProductList from "../learning/productList-ReactWindo";
 
 const Contact = () =>{
     return(
     <>
-        <h1>
-            This is Contact Page.
-        </h1>
-        <GropuTodo />
+        {/* <GropuTodo /> */}
+        {/* <ProductList /> */}
+        {/* <ProductListV /> */}
+        <ProductCart />
     </>
     )
 }

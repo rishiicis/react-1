@@ -76,3 +76,49 @@ body.dark {
 .todoWrap{display: flex; flex-wrap: wrap; gap: 20px;}
 .completed{color:green}
 .userBlock{border: 1px solid; flex:0 0 calc(25% - 15px); height: 250px; overflow-y: auto;}
+
+
+.card{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  height: 135px;
+}
+.card-img > img{
+  object-fit: contain;
+  width: 100px;
+}
+
+.product-list {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.product-card {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.product-card > button, 
+.cart-header > button, 
+.cart-item > button {
+    border: 1px solid blue;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.cart-item {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 5px;
+    justify-content: space-between;
+    max-width: 600px;
+}
+.item-details{
+  display: flex;
+  gap: 10px;
+}

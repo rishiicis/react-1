@@ -36,7 +36,8 @@ const  Counter_050 = ()=> {
   }
   return (
     <div>
-      <p>{count}{increas}</p>
+      <p>{count}</p>
+      {/* <p>{increas}</p> */}
       <button onClick={handleClick} > Click</button>
     </div>
   );
